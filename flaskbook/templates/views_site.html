@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if book %}
+    <table class="customTable">
+    <thead>
+    <tr>
+        <th>Description</th>
+        <th>Views</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            {{ book[1] }}
+        </td>
+        <td>
+            {{ book[2] }}
+        </td>
+    </tr>
+    </tbody>
+</table>
+{% else %}
+<h2> Sorry, no books in DB.</h2>
+{% endif %}
+{% endblock %}

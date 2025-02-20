@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-style-10">
+    <h1>Find book!<span>Поиск книг по имени автора</span></h1>
+    <form action="/books/author" method="post">
+
+        <div class="section">Author full name</div>
+        <div class="inner-wrap">
+            {{ form.author }}
+        </div>
+
+        <div class="button-section">
+            <input type="submit" name="Search"/>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
